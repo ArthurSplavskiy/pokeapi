@@ -1,0 +1,41 @@
+.totalPage {}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	font-weight: 700;
+	justify-content: center;
+}
+
+.currentPage {}
+
+.prevPage,
+.nextPage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: var(--transition);
+	background: #FFFFFF;
+	border: 1px solid rgb(117, 117, 117);
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.prevPage {
+	margin-right: 20px;
+	img {
+		transform: rotate(-90deg);
+	}
+}
+
+.nextPage {
+	margin-left: 20px;
+	img {
+		transform: rotate(90deg);
+	}
+}

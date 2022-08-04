@@ -1,0 +1,76 @@
+.card {
+	border: 2px solid rgb(117, 117, 117);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	transition: var(--transition);
+	height: 100%;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+.id {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 40px;
+	span {
+		padding: 4px;
+		background: #FFFFFF;
+	}
+}
+.image {
+	margin-bottom: 20px;
+	max-height: 200px;
+}
+.name {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+	background: #FFFFFF;
+	margin-top: auto;
+	padding: 4px;
+}
+.type {
+	padding: 4px;
+	background: #e1e1e1;
+}
+.grassColor {
+	background: rgb(142, 225, 142);
+}
+.fireColor {
+	background: rgb(252, 62, 91);
+}
+.waterColor {
+	background: rgb(73, 125, 255);
+}
+.bugColor {
+	background: rgb(207, 131, 206);
+}
+.normalColor {
+	background: rgb(213, 196, 213);
+}
+.poisonColor {
+	background: rgb(134, 11, 134);
+}
+.groundColor {
+	background: rgb(144, 94, 52);
+}
+.electricColor {
+	background: rgb(240, 230, 91);
+}
+.fairyColor {
+	background: rgb(240, 136, 226);
+}
+.fightingColor {
+	background: rgb(188, 11, 11);
+}
+.psychicColor {
+	background: rgb(255, 183, 0);
+}
+.rockColor {
+	background: rgb(176, 176, 176);
+}
+.ghostColor {
+	background: rgb(151, 5, 255);
+}
