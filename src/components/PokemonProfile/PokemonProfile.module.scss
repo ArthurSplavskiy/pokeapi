@@ -1,120 +1,143 @@
 .profile {
-	display: grid;
-	grid-template-columns: minmax(320px, 1fr) 3fr;
-	grid-template-areas: 
-		"image name name name"
-		"image info info info"
-		"image stats stats stats";
-	gap: 40px;
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr) 3fr;
+    grid-template-areas:
+        "image name name name"
+        "image info info info"
+        "image stats stats stats";
+    gap: 40px;
 }
-.image {
-	grid-area: image;
-	border: 2px solid rgb(117, 117, 117);
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.name {
-	grid-area: name;
-	font-size: 24px;
-	font-weight: 700;
-	text-transform: capitalize;
-	span {
-		background: #FFFFFF;
-		padding: 4px;
-	}
-}
-.info {
-	grid-area: info;
-	font-size: 20px;
-	font-weight: 700;
-	padding: 4px;
-	
-	div {
-		display: grid;
-		grid-template-columns: 100px 1fr;
-		gap: 20px;
-		margin-bottom: 10px;
-	}
-	span {
-		font-weight: 400;
-	}
-}
-.stats {
-	grid-area: stats;
 
-	li {
-		display: grid;
-		grid-template-columns: 200px 1fr;
-		gap: 20px;
-		border-bottom: 1px dashed rgb(117, 117, 117);
-		padding-bottom: 10px;
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
+.image {
+    grid-area: image;
+    border: 2px solid rgb(117 117 117);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.name {
+    grid-area: name;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    span {
+        background: #FFFFFF;
+        padding: 4px;
+    }
+}
+
+.info {
+    grid-area: info;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px;
+
+    div {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-weight: 400;
+    }
+}
+
+.stats {
+    grid-area: stats;
+
+    li {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+        border-bottom: 1px dashed rgb(117 117 117);
+        padding-bottom: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .statName {
-	font-weight: 700;
-	text-transform: uppercase;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
 .statNumber {
-	font-weight: 700;
-	span {
-		padding: 4px;
-		background: #FFFFFF;
-	}
+    font-weight: 700;
+
+    span {
+        padding: 4px;
+        background: #FFFFFF;
+    }
 }
+
 .grassColor {
-	background: rgb(142, 225, 142);
+    background: rgb(142 225 142);
 }
+
 .fireColor {
-	background: rgb(252, 62, 91);
+    background: rgb(252 62 91);
 }
+
 .waterColor {
-	background: rgb(73, 125, 255);
+    background: rgb(73 125 255);
 }
+
 .bugColor {
-	background: rgb(207, 131, 206);
+    background: rgb(207 131 206);
 }
+
 .normalColor {
-	background: rgb(213, 196, 213);
+    background: rgb(213 196 213);
 }
+
 .poisonColor {
-	background: rgb(134, 11, 134);
+    background: rgb(134 11 134);
 }
+
 .groundColor {
-	background: rgb(144, 94, 52);
+    background: rgb(144 94 52);
 }
+
 .electricColor {
-	background: rgb(240, 230, 91);
+    background: rgb(240 230 91);
 }
+
 .fairyColor {
-	background: rgb(240, 136, 226);
+    background: rgb(240 136 226);
 }
+
 .fightingColor {
-	background: rgb(188, 11, 11);
+    background: rgb(188 11 11);
 }
+
 .psychicColor {
-	background: rgb(255, 183, 0);
+    background: rgb(255 183 0);
 }
+
 .rockColor {
-	background: rgb(176, 176, 176);
+    background: rgb(176 176 176);
 }
+
 .ghostColor {
-	background: rgb(151, 5, 255);
+    background: rgb(151 5 255);
 }
 
 @media (max-width: 768px) {
-	.profile {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"name"
-			"image"
-			"info"
-			"stats";
-		gap: 40px;
-	}
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "name"
+            "image"
+            "info"
+            "stats";
+        gap: 40px;
+    }
 }

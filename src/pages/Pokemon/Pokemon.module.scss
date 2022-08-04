@@ -1,25 +1,27 @@
 .page {
-	padding: 60px 0;
+    padding: 60px 0;
 }
 
 .back {
-	display: inline-flex;
-	padding: 10px 20px;
-	align-items: center;
-	font-size: 24px;
-	margin-bottom: 20px;
-	cursor: pointer;
-	transition: var(--transition);
-	background: #FFFFFF;
-	border: 1px solid rgb(117, 117, 117);
-	&:hover {
-		opacity: 0.5;
-	}
-	img {
-		margin-right: 20px;
-	}
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    background: #FFFFFF;
+    border: 1px solid rgb(117 117 117);
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    img {
+        margin-right: 20px;
+    }
 }
 
 .disable {
-	pointer-events: none;
+    pointer-events: none;
 }

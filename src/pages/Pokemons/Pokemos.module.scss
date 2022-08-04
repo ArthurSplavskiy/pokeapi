@@ -1,24 +1,25 @@
 .root {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 40px;
-	padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 0;
 }
 
 .actions {
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	gap: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 
 .loadBtn {
-	margin-top: 30px;
-	border: 1px solid #000000;
-	font-size: 24px;
-	padding: 20px;
-	cursor: pointer;
-	transition: var(--transition);
-	&:hover {
-		background: var(--primary);
-	}
+    margin-top: 30px;
+    border: 1px solid #000000;
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+        background: var(--primary);
+    }
 }
