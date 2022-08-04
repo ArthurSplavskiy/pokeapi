@@ -11,24 +11,28 @@ export const PokemonList = ({
 	return (
 		<div className={styles.grid}>
 			{
-				!loading
+				pokemons.length
 				?
-					!notFound 
+					!loading
 					?
-						pokemons.map(p => (
-							<Link to={`${RouteName.POKEMONS}/${p.id}/${p.name}?page=${page}`} key={p.name + p.id}>
-								<PokemonCard
-									id={p.id}
-									image={p.sprites.other.dream_world.front_default}
-									name={p.name}
-									type={p.types[0].type.name}
-								/>
-							</Link>
-						))
+						!notFound 
+						?
+							pokemons.map(p => (
+								<Link to={`${RouteName.POKEMONS}/${p.id}/${p.name}?page=${page}`} key={p.name + p.id}>
+									<PokemonCard
+										id={p.id}
+										image={p.sprites.other.dream_world.front_default}
+										name={p.name}
+										type={p.types[0].type.name}
+									/>
+								</Link>
+							))
+						:
+						<p className={styles.notFound}>Not found 😭</p>
 					:
-					<p className={styles.notFound}>Not found 😭</p>
+					<p className={styles.notFound}>Search...</p>
 				:
-				<p className={styles.notFound}>Search...</p>
+				<p className={styles.notFound}>Not found 😭</p>
 			}
 		</div>
 	);
